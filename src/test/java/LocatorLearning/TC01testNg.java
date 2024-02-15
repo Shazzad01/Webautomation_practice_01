@@ -47,4 +47,12 @@ public class TC01testNg extends DriverSetup {
         driver.findElement(By.className("bld-txt")).click();
         Thread.sleep(5000);
     }
+
+    @Test
+
+    public void print_title() throws InterruptedException {
+        driver.get("https://rahulshettyacademy.com/AutomationPractice/");
+        System.out.println(driver.findElement(By.tagName("h1")).getText());
+        Thread.sleep(5000);
+    }
 }
