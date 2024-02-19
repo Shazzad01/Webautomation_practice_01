@@ -48,7 +48,7 @@ public class TC05_Alert extends DriverSetup {
 
         String result = driver.findElement(By.id("result")).getText();
 
-        Assert.assertEquals(result, "You entered: SHAZZAD");
+        Assert.assertEquals(result, "You entered: SHAZZAD-");
         Thread.sleep(3000);
 
     }
